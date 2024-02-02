@@ -1,0 +1,35 @@
+
+[--- Steps --]
+BP on jump that decides on which message to show.
+Patch that jump
+Check MessageBox parameters and patch any wrong
+parameters
+
+[--- Wrong parameter 1 --]
+push 0                 [ Button Type ]
+push "Congrats!"       [ Caption ]
+push "Well done!"      [ Text ]
+push FFFFFFFF          [ Parent Window ]
+call MessageBox
+
+
+[--- Corrected Parameter 1 ---]
+push 0                 [ Button Type ]
+push "Congrats!"       [ Caption ]
+push "Well done!"      [ Text ]
+push 00000000          [ Parent Window ]
+call MessageBox
+
+Note:
+   eax = 4 bytes  
+   al =  1 byte:
+
+Using this:
+   mov al,0
+
+will set eax to FFFFFF00
+
+Better way is:
+   xor eax,eax
+
+which sets eax to 00000000

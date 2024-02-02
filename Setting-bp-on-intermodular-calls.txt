@@ -1,0 +1,2 @@
+1. Set BP (Breakpoints) on Strings
+2. Set BP (Breakpoints) on Intermodular Calls

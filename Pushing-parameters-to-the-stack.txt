@@ -1,0 +1,22 @@
+Windows API Functions = win32 API
+
+https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messagebox
+
+The push is reverse of the function:
+
+[--- MessageBox ---]
+push 0                              [ Button Type ]
+push "Sorry!"       		    [ Caption ]
+push "Wrong serial key. Try again!" [ Text ]
+push 0                 		    [ Parent Window ]
+call MessageBox
+
+
+The stack is reverse of the push,
+the stack grows from bottom up.
+
+[--- Stack ---]
+0
+Wrong serial key. Try again!
+Sorry
+0

@@ -1,0 +1,24 @@
+
+[--- Steps --]
+BP on jump that decides on which message to show.
+Patch that jump
+Check MessageBox parameters and patch any wrong
+parameters
+
+[--- Wrong parameter 1 --]
+push 0                 [ Button Type ]
+push "Congrats!"       [ Caption ]
+push "Well done!"      [ Text ]
+push FFFFFFFF          [ Parent Window ]
+call MessageBox
+
+
+[--- Corrected Parameter 1 ---]
+push 0                 [ Button Type ]
+push "Congrats!"       [ Caption ]
+push "Well done!"      [ Text ]
+push 0                 [ Parent Window ]
+call MessageBox
+
+eax = 4 bytes
+al =  1 byte

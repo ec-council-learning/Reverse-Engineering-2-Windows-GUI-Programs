@@ -1,0 +1,10 @@
+[x64dbg settings]
+uncheck TLS callbacks
+ignore Exceptions
+
+[Steps]
+Search for strings for bad message
+Put BP (breakpoint) on bad message
+Search for where serial key is being compared
+Put BP on the comparison instruction.
+Extract the Serial Key.
