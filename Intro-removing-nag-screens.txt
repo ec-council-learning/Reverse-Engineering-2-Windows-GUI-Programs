@@ -1,0 +1,12 @@
+CrackMe #3 - Removing nag screens
+
+https://crackinglessons.com/crackme-3/
+
+Objectives:
+
+  1. Remove the 2 nag screens – one at startup and one at close of program.
+  2. In the About screen – change status to Registered.
+
+Password to unzip the file:
+
+   crackinglessons.com

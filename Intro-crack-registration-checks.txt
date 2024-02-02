@@ -1,0 +1,12 @@
+CrackMe #2
+
+https://crackinglessons.com/crackme-2/
+
+Objectives:
+
+Without patching, register the software
+in your name
+
+Password to unzip the file:
+
+crackinglessons.com

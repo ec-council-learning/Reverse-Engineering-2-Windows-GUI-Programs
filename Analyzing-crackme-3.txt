@@ -1,0 +1,9 @@
+[Analyzing the PE with DIE]
+
+[Setup for x64dbg ]
+Remove Break on System Breakpoints
+
+[Observing the behaviour of CrackMe #3]
+
+1. remove nag screens
+2. change status to registered (About screen)

@@ -1,0 +1,13 @@
+[ Hardware breakpoints and memory patching ]
+
+Definitions:
+
+Hardware BP's are breakpoints on memory access.
+
+Software BP's are breakpoints on instructions.
+
+
+Objectives:
+
+1. Setting hardware breakpoints on RAM memory
+2. Modifying data in RAM memory addresses directly
